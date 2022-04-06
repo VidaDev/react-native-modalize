@@ -71,6 +71,7 @@ const ModalizeBase = (
     rootStyle,
     modalStyle,
     handleStyle,
+    handle2Style,
     overlayStyle,
     childrenStyle,
 
@@ -671,6 +672,7 @@ const ModalizeBase = (
         onHandlerStateChange={handleComponent}
       >
         <Animated.View style={handleStyles}>
+          <Animated.View style={handle2Style}></Animated.View>
           <View style={shapeStyles} />
         </Animated.View>
       </PanGestureHandler>
